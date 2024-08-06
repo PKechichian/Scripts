@@ -110,7 +110,7 @@ if [ $exitstatus = 0 ]; then
 else
     whiptail --title "Error" --msgbox "Installation stopped." 8 78
 exit
-f
+fi
 
 #### Check passwords match
 
