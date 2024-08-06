@@ -147,10 +147,12 @@ sleep 1
 echo ""
 echo "###########################"
 echo "PHP installation"
+sudo echo "deb https://packages.sury.org/php bookworm main" >> /etc/apt/sources.list
+sudo apt update && sudo apt upgrade -y
 apt install php$PHP -y
+a2enmod php$PHP
 sleep 1
 
-echo ""
 echo "###########################"
 echo "Bareos repo"
 wget -O /etc/apt/sources.list.d/bareos.list $URL/bareos.list
