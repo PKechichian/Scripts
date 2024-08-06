@@ -16,7 +16,7 @@
 
 RELEASE=current
 
-PHP=8.3
+PHP=7.4
 
 URL=https://download.bareos.org/$RELEASE/Debian_12
 
